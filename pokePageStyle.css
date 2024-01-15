@@ -1,0 +1,162 @@
+:root {
+  --grayscale-white: #ffffff;
+}
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  /* place-content: center; */
+  place-items: center;
+  min-height: 100vh;
+}
+
+.background-img {
+  background-color: lightblue;
+  width: 100%;
+  display: flex;
+  place-content: center;
+}
+.background-img img {
+  opacity: 0.2;
+}
+
+.pokemon-sprite {
+  align-self: center;
+  position: relative;
+  top: -2rem;
+  z-index: 2;
+}
+.main-container {
+  position: relative;
+  top: -4rem;
+  z-index: 1;
+  max-width: 100%;
+  width: 30rem;
+  gap: 1rem;
+  padding-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1rem;
+}
+.poke-class {
+  place-self: center;
+}
+.about {
+  place-self: center;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  width: 3rem;
+  overflow: auto;
+}
+.pokemon-details {
+  place-self: start;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  min-width: 100%;
+  place-content: space-around;
+}
+.weight-section,
+.height-section {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  border-right-color: grey;
+  border-right: 0.1rem solid gray;
+  padding-right: 3rem;
+}
+.weight-section img,
+.height-section img {
+  overflow: hidden;
+  width: 70%;
+}
+.height-section img {
+  transform: rotate(45deg);
+}
+.move-section {
+}
+.stats {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.stats section {
+  display: flex;
+  place-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.stats p {
+  width: 3rem;
+  text-align: center;
+}
+progress {
+  flex: 1;
+}
