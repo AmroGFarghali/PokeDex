@@ -3,77 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="pokePageStyle.css" />
-    <title>Document</title>
-    <script src="/pokePage.js" defer></script>
+    <script src="homePage.js" defer></script>
+    <link rel="stylesheet" href="homePage.css" />
+    <title>PokeDex</title>
   </head>
   <body>
-    <picture class="background-img">
-      <!-- background image -->
-      <img src="assets/pokedex.svg" alt="" />
-    </picture>
-    <picture class="pokemon-sprite">
-      <img src="" alt="" />
-    </picture>
-    <main class="main-container">
-      <div class="poke-class">Water</div>
-      <p class="about">About</p>
-      <section class="pokemon-details">
-        <div class="weight-section">
-          <img src="assets/weight.svg" alt="" />
-          <p id="weight-amount" class="weight-amount">9 kg</p>
-          <p style="grid-column: span 2"">Weight</p>
+    <main>
+      <header>
+        <section class="title-section">
+          <img src="assets/pokeball.svg" alt="" />
+          <h1>PokeDex!</h1>
+        </section>
+        <div class="search-bar">
+          <img
+            src="./assets/search.svg"
+            alt="search icon"
+            class="search-icon"
+          />
+          <input
+            type="text"
+            class="search-input "
+            placeholder="Search"
+            id="search-input"
+          />
+      </header>
+      <section class="pokemon-list">
+        <div class="pokemon-card">
+          <p class="pokemon-id">1</p>
+          <picture class="pokemon-artwork">
+            <img src="" alt="" />
+          </picture>
+          <p class="pokemon-name">Name</p>
         </div>
-        <div class="height-section">
-          <img src="assets/height.svg" alt="" />
-          <p id="height-amount" class="weight-amount">0.3m</p>
-          <p style="grid-column: span 2">Height</p>
+        <div class="pokemon-card">
+          <p class="pokemon-name">2</p>
+          <picture class="pokemon-artwork"><img src="" alt="" /></picture>
+          <p class="poke-id">1</p>
         </div>
-        <div class="move-section">
-          <p id="moves" class="moves">Moves</p>
+        <div class="pokemon-card">
+          <p class="pokemon-id">1</p>
+          <picture class="pokemon-artwork"><img src="" alt="" /></picture>
+
+          <p class="pokemon-name">Charmander</p>
         </div>
-      </section>
-      <p id="pokemon-description" class="pokemon-description"></p>
-
-      <section id="stats" class="stats">
-        <p style="width: 100%;" >Base Stats</p>
-        <section class="hp">
-          <p>HP</p>
-          <p class="hp-amount">044</p>
-          <progress id="file" value="" max="100">32%</progress>
-        </section>
-        <section class="atk">
-          <p>ATK</p>
-          <p class="atk-amount">044</p>
- 
-          <progress id="file" value="" max="100">2%</progress>
-        </section>
-        <section class="def">
-          <p>DEF</p>
-          <p class="def-amount">044</p>
-
-          <progress id="file" value="" max="100">2%</progress>
-
-        </section>
-        <section class="satk">
-          <p>SATK</p>
-          <p class="satk-amount">044</p>
-       
-          <progress id="file" value="" max="100">2%</progress>
-
-        </section>
-        <section class="sdef">
-          <p>SDEF</p>
-          <p class="sdef-amount">044</p>
-  
-          <progress id="file" value="" max="100">2%</progress>
-
-        </section>
-        <section class="spd">
-          <p>SPD</p>
-          <p class="spd-amount">044</p>
-          <div class="spd-bar"></div>
-        </section>
       </section>
     </main>
   </body>
